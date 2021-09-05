@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         .load(posts.get(currentPost).gifUrl)
                         .into(imageView);
             }
+            description.setText(posts.get(currentPost).description);
             if (currentPost <= 0) setUndoDisabled();
         });
 
